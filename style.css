@@ -1,0 +1,80 @@
+:root {
+  --bg: #120b1e;
+  --surface: #1e1530;
+  --border: #2f2445;
+  --text: #f4f0fb;
+  --text-secondary: #b9aed0;
+  --accent: #8b5cf6;
+  --accent-end: #d946ef;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 48px 20px 64px;
+}
+
+header.site {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+header.site a { color: var(--text); text-decoration: none; font-weight: 700; font-size: 20px; }
+
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-end));
+}
+
+h1 { font-size: 34px; line-height: 1.2; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 8px; }
+h3 { font-size: 18px; margin: 24px 0 4px; }
+p, li { color: var(--text-secondary); }
+strong { color: var(--text); }
+a { color: #c4a6ff; }
+
+.meta { color: var(--text-secondary); font-size: 15px; margin-bottom: 32px; }
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 20px;
+  margin: 16px 0;
+}
+
+.links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+
+.button {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-end));
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.button.secondary { background: var(--surface); border: 1px solid var(--border); }
+
+table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 15px; }
+th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--border); vertical-align: top; }
+th { color: var(--text); }
+td { color: var(--text-secondary); }
+
+footer { margin-top: 56px; font-size: 14px; color: var(--text-secondary); }
+footer a { margin-right: 16px; }
