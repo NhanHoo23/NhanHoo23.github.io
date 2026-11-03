@@ -37,7 +37,7 @@ header.site a { color: var(--text); text-decoration: none; font-weight: 700; fon
   width: 40px;
   height: 40px;
   border-radius: 10px;
-  background: linear-gradient(135deg, var(--accent), var(--accent-end));
+  background: url("scrollock/icon.png") center / cover no-repeat;
 }
 
 h1 { font-size: 34px; line-height: 1.2; margin: 0 0 8px; }
