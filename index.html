@@ -3,23 +3,63 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>NhanHoo Apps</title>
-  <meta name="description" content="iOS apps by NhanHoo.">
+  <title>NhanHoo — Independent iOS Developer</title>
+  <meta name="description" content="NhanHoo is an independent iOS developer from Vietnam building small, focused apps that respect your time and privacy.">
+  <meta property="og:title" content="NhanHoo — Independent iOS Developer">
+  <meta property="og:description" content="Small, focused iPhone apps that respect your time and privacy.">
+  <meta property="og:image" content="https://nhanhoo23.github.io/assets/avatar.png">
+  <link rel="icon" type="image/png" href="assets/avatar.png">
+  <link rel="apple-touch-icon" href="assets/avatar.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main>
-  <h1>NhanHoo Apps</h1>
-  <p class="meta">iOS apps by NhanHoo.</p>
-
-  <div class="card">
-    <strong><a href="scrollock/">Scrollock</a></strong>
-    <p>Block the apps you can't put down — on a timer, a schedule, or a daily limit.</p>
+<header class="nav">
+  <div class="container">
+    <a class="brand" href="./"><img class="round" src="assets/avatar.png" alt="">NhanHoo</a>
+    <nav class="nav-links">
+      <a href="#apps">Apps</a>
+      <a href="mailto:nhanhoo23ios@gmail.com">Contact</a>
+    </nav>
   </div>
+</header>
 
-  <footer>
-    <a href="mailto:nhanhoo23ios@gmail.com">Contact</a>
-  </footer>
+<main>
+  <section class="profile">
+    <div class="container">
+      <img class="avatar large" src="assets/avatar.png" alt="NhanHoo">
+      <span class="eyebrow">Independent iOS developer · Vietnam</span>
+      <h1>Hi, I'm NhanHoo.</h1>
+      <p class="lead">I build small, focused iPhone apps that respect your time and your privacy — no accounts, no data you didn't ask to share.</p>
+      <div class="actions">
+        <a class="button" href="#apps">See my apps</a>
+        <a class="button" href="mailto:nhanhoo23ios@gmail.com">Get in touch</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="apps">
+    <div class="container">
+      <div class="section-head">
+        <h2>Apps</h2>
+        <p>Available on the App Store for iPhone and iPad.</p>
+      </div>
+      <a class="card app-row" href="scrollock/">
+        <img src="scrollock/icon.png" alt="Scrollock app icon">
+        <div>
+          <h3>Scrollock</h3>
+          <p>Block the apps you can't put down — on a timer, a schedule, or a daily limit.</p>
+        </div>
+        <span class="chev" aria-hidden="true">›</span>
+      </a>
+    </div>
+  </section>
 </main>
+
+<footer class="footer">
+  <div class="container">
+    <span>© 2026 NhanHoo</span>
+    <nav><a href="scrollock/">Scrollock</a><a href="mailto:nhanhoo23ios@gmail.com">nhanhoo23ios@gmail.com</a></nav>
+  </div>
+</footer>
 </body>
 </html>
